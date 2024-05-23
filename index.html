@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Arduino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Ender 5</h1>
+      </div>
+      <h1>Wifi Control</h1>
+    </div>
+  </header>
+
+  <div class="content-wrap">
+    <div class="container">
+      <div class="video-container">
+        <video controls>
+          <source src="video.m3u8" type="application/x-mpegURL">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+
+      <div class="control-panel">
+        <p>Temperatura</p>
+        <div class="temperature-container">
+          <div class="temperature">
+            <p>END:</p>
+            <span id="end">--</span>
+            <button id="button1">DESENERGIZADO</button>
+          </div>
+          <div class="temperature">
+            <p>BED:</p>
+            <span id="bed">--</span>
+            <button id="button2">ENERGIZADO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Control de Arduino. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
